@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Selectors</title>
+  <style>
+    /* 1. Descendant selector */
+    .container #myHeader {
+      color: red;
+    }
+
+    /* 2. Sibling selector */
+    div + h3 {
+      color: green;
+    }
+
+    .myText1 + .myText2 {
+      color: orange;
+    }
+
+    /* 3. Attribute selectors */
+    .myInput[type="text"],
+    input[type="email"] {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="myHeader">Welcome!</h1>
+  </div>
+
+  <div>This is a div.</div>
+  <h3>This heading should turn green (div + h3)</h3>
+
+  <p class="myText1">First paragraph</p>
+  <p class="myText2">Second paragraph (adjacent sibling turns orange)</p>
+
+  <form>
+    <input type="text" class="myInput" placeholder="Enter your name">
+    <input type="email" placeholder="Enter your email">
+  </form>
+
+</body>
+</html>
