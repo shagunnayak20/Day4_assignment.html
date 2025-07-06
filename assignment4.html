@@ -1,0 +1,49 @@
+#html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Site</h1>
+    <p>Your journey to greatness starts here.</p>
+    <button>Get Started</button>
+  </div>
+</body>
+</html>
+
+#css
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, lightpink, lightsalmon);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
